@@ -27,3 +27,10 @@ Get-Subscribers -Filter @{Group='HR'}
 # Send outage alert to group 'IT'
 Send-Notification -Filter @{Group='IT'} -Message 'Critical service outage ongoing'
 ```
+
+## Backlog
+
+-  Cross-platform compatible (PowerShell Core)
+-  Connect securely to Controller-Core via HTTPS (optionally accepting self-signed certs during development)
+-  Command to retrieve list of subscribed users/computers from Controller-Core
+-  Command to create/send targeted notifications based on AD filters (users, groups, computers)
